@@ -1,0 +1,51 @@
+<!-- Autor: Oscar Alvarez Islas
+
+Fecha: 22/08/24 
+
+Titulo: Encriptador/Desencriptador de Texto -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo">
+    </header>
+    
+    <main>
+        <form class="form__section">
+            <textarea class="form__input" name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn__container">
+                <div class="alert__msj"><img src="/assets/img/vector.png" alt="Signo">
+                    <span>Solo letras minúsculas y sin acentos</span>
+                </div>  
+            </div>  
+            <div class="submit_container">
+                 
+                <input class="form__btn" type="submit" value="Encriptar">
+                <input class="form__btn form__btn--secundary" type="submit" value="Desencriptar">
+            </div>
+        </form>
+
+        <aside class="result">
+            <img class="result__img" src="/assets/img/muneco.png" alt="monito">
+            <div class="loader hidden"></div>
+            <div class="result__container">
+                <h3 class="result__title">Ningún mensaje fue encontrado</h3>
+                <p class="result__text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="result__btn form__btn form__btn--secundary hidden">
+                    Copiar
+                </button>
+            </div>
+        </aside>
+    </main>
+    <script src="./encriptador.js"></script>
+</body>
+</html>
